@@ -12,7 +12,6 @@ interface RoomRepository {
 
     suspend fun getRoomById(roomId: String): Result<Room>
 
-
     class Impl(private val sessionRepository: SessionRepository) : RoomRepository {
 
         override suspend fun getRoomSummaryList() =

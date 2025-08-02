@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="room_invite">Запрошення в кімнату</string>
+    <string name="empty_room">Пуста кімната</string>
+    <string name="room_name_for_two_members">%s та %s</string>
+    <string name="room_name_for_three_members">%s, %s та %s</string>
+    <string name="room_name_for_four_members">%s, %s, %s та %s</string>
+    <string name="room_name_for_many_members">%s, %s, %s та %d інших</string>
+</resources>

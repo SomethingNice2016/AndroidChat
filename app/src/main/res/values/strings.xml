@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Chat</string>
+    <string name="room_invite">Room invite</string>
+    <string name="empty_room">Empty room</string>
+    <string name="room_name_for_two_members">%s and %s</string>
+    <string name="room_name_for_three_members">%s, %s and %s</string>
+    <string name="room_name_for_four_members">%s, %s, %s and %s</string>
+    <string name="room_name_for_many_members">%s, %s, %s and %d others</string>
 </resources>
