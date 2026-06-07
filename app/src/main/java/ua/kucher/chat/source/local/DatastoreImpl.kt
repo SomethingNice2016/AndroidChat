@@ -18,7 +18,7 @@ import javax.inject.Singleton
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "ChatSettings")
 
 @Singleton
-class DatastoreImpl @Inject constructor(@ApplicationContext private val context: Context) :
+class DatastoreImpl @Inject constructor(@param:ApplicationContext private val context: Context) :
     AuthDatastore {
 
     private val datastore = context.dataStore

@@ -1,19 +1,22 @@
+import com.android.build.api.dsl.ApplicationExtension
+
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
 }
 
-android {
-    namespace = "ua.kucher.chat"
-    compileSdk = 35
 
+extensions.configure<ApplicationExtension> {
+    namespace = "ua.kucher.chat"
+    compileSdk {
+        version = release(37)
+    }
     defaultConfig {
         applicationId = "ua.kucher.chat"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -53,6 +56,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.splash)
+
+    //Kotlin medatada
+    ksp(libs.kotlin.metadata)
 
     //Datastore
     implementation(libs.datastore)
